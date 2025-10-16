@@ -54,7 +54,7 @@ export const HomePage = () => {
         <h1>Discover Topics</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {topics.map((topic) => (
-            <TopicCard key={topic.id} name={topic.name} />
+            <TopicCard key={topic.id} id={topic.id} name={topic.name} />
           ))}
           <div ref={bottomOfSearchResultsRef} />
         </div>
